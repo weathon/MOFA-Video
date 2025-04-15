@@ -165,9 +165,9 @@ The demo has been tested on CUDA version of 11.7.
 
 ```
 cd ./MOFA-Video-Hybrid
-conda create -n mofa python==3.10
+conda create -n mofa python==3.10 cudatoolkit=11.7 -c conda-forge
 conda activate mofa
-pip install -r requirements.txt
+pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu117
 pip install opencv-python-headless
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
